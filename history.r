@@ -12,5 +12,7 @@ unzip("themes/hugrid.zip", exdir= "themes")
 # copy item.toml and images
 # modify confighug.toml, see commit history
 
-blogdown::hugo_cmd("--config confighug.toml") #bulid dat version
+blogdown::hugo_cmd("--config confighug.toml,config-common.toml") #bulid dat version
 blogdown::serve_site()
+
+blogdown::stop_server()
