@@ -4,6 +4,38 @@
     logo = "img/logo.png"
     logo_small = "img/logo-small.png"
     
+
+# Main menu
+
+[[menu.main]]
+    identifier="home"
+    name = "Home"
+    url  = "../"
+    weight = 1
+    
+[[menu.main]]
+    identifier="resultgallery"
+    name = "Result Gallery"
+    url  = "../R-Gallery/"
+    weight = 1    
+
+[[menu.main]]
+    identifier="blog"
+    name = "Blog"
+    url  = "../blog/"
+    weight = 2
+
+[[menu.main]]
+    identifier = "articles"
+    name = "Articles"
+    url  = "../articles/"
+    weight = 3
+
+[[menu.main]]
+    identifier = "software"
+    name = "Software"
+    url  = "../software/"
+    weight = 4
     
 # Top bar social links menu
 
@@ -33,7 +65,7 @@
     
     # Enable or disable top bar with social icons
 [params.topbar]
-    enable = true
+    enable = false
     text = """<p class="hidden-sm hidden-xs">Contact us on +420 777 555 333 or hello@universal.com.</p>
       <p class="hidden-md hidden-lg"><a href="#" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>
       <a href="#" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>

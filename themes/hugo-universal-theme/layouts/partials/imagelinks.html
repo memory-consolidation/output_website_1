@@ -1,0 +1,49 @@
+{{ if isset .Site.Params "imagelinks" }}
+{{ if .Site.Params.imagelinks.enable }}
+{{ if gt (len .Site.Data.imagelinks) 0 }}
+<section class="bar background-gray no-mb">
+    <div class="container">
+        <div class="row" flexbox-center>
+            <div class="col-md-12">
+                <div class="heading text-center">
+                    <h2>{{ .Site.Params.imagelinks.title1 }}<br>
+                    {{ .Site.Params.imagelinks.title2 }}</h2>
+                </div>
+
+                <p class="lead"  {{ if .Site.Params.imagelinks.center }}
+                align = "center" {{end}} >
+                  {{ if .Site.Params.imagelinks.url }}
+                  <a href= "{{ .Site.Params.imagelinks.url }}">
+                  {{ .Site.Params.imagelinks.subtitle }}
+                  </a>
+                  {{ else }}
+                  {{ .Site.Params.imagelinks.subtitle }}
+                  {{ end }}
+                </p>
+                <div align="center">
+                <ul class="owl-carousel customers" >
+                    {{ range .Site.Data.imagelinks }}
+                    <li class="item" title="{{ .name }}">
+                        {{ if .url }}
+                          <a href="{{ .url }}">
+                            
+                            <img src="{{ .Site.BaseURL }}{{ .image }}" alt="{{ .name }}" class="img-responsive"  />
+                           <p class="lead"> {{ .name }}</p>
+                          </a>
+                        {{ else }}
+                        
+                          <img src="{{ .Site.BaseURL }}{{ .image }}" alt="{{ .name }}" class="img-responsive" />
+                          <p class="lead"> {{ .name }}</p>
+                        {{ end }}
+                    </li>
+                    {{ end }}
+                </ul>
+                <!-- /.owl-carousel -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+{{ end }}

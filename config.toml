@@ -1,5 +1,5 @@
 baseurl = "https://example.org"
-title = "Universal"
+title = "SFB 1315 output: research and outreach"
 theme = "hugo-universal-theme"
 languageCode = "en-us"
 # Site language. Available translations in the theme's `/i18n` directory.
@@ -24,7 +24,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     weight = 1
     
 [[menu.main]]
-    identifier="result gallery"
+    identifier="resultgallery"
     name = "Result Gallery"
     url  = "/R-Gallery/"
     weight = 1    
@@ -36,15 +36,15 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     weight = 2
 
 [[menu.main]]
-    identifier = "faq"
-    name = "FAQ"
-    url  = "/faq/"
+    identifier = "articles"
+    name = "Articles"
+    url  = "/articles/"
     weight = 3
 
 [[menu.main]]
-    identifier = "contact"
-    name = "Contact"
-    url  = "/contact/"
+    identifier = "software"
+    name = "Software"
+    url  = "/software/"
     weight = 4
 
 # Top bar social links menu
@@ -75,9 +75,9 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [params]
     viewMorePostLink = "/blog/"
-    author = "DevCows"
-    defaultKeywords = ["devows", "hugo", "go"]
-    defaultDescription = "Site template made by devcows using hugo"
+    author = "SFB1315"
+    defaultKeywords = ["neurobiology"]
+    defaultDescription = "OUtput from the SFB1315"
 
     # Twitter
     twitter = "GoHugoIO"
@@ -87,7 +87,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     googleMapsApiKey = "AIzaSyCFhtWLJcE30xOAjcbSFi-0fnoVmQZPb1Y"
 
     # Style options: default (light-blue), blue, green, marsala, pink, red, turquoise, violet
-    style = "default"
+    style = "blue"
 
     # Since this template is static, the contact form uses www.formspree.io as a
     # proxy. The form makes a POST request to their servers to send the actual
@@ -102,24 +102,25 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     # - you're done. Happy mailing!
     #
     # Enable the contact form by entering your Formspree.io email
-    email = "your@email.com"
+    email = "SFB1315.ifb@hu-berlin.de"
     contact_form_ajax = false
 
-    about_us = "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>"
-    copyright = "Copyright (c) 2015 - 2016, YourCompany; all rights reserved."
+    about_us = "<p>Research consortium.</p>"
+    copyright = "Copyright (c) 2019, Julien Colomb; CC-BY."
 
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
 
     logo = "img/logo.png"
     logo_small = "img/logo-small.png"
-    address = """<p><strong>Universal Ltd.</strong>
-        <br>13/25 New Avenue
-        <br>Newtown upon River
-        <br>45Y 73J
-        <br>England
-        <br>
-        <strong>Great Britain</strong>
+    address = """<p> SFB1315 Coordination Office
+        <br>Charité Universitätsmedizin Berlin
+
+        <br>Charitéplatz 1,
+
+        <br>10117 Berlin
+        <br>Germany
+
       </p>
       """
     latitude = "-12.043333"
@@ -130,7 +131,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 # Enable or disable top bar with social icons
 [params.topbar]
-    enable = true
+    enable = false
     text = """<p class="hidden-sm hidden-xs">Contact us on +420 777 555 333 or hello@universal.com.</p>
       <p class="hidden-md hidden-lg"><a href="#" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>
       <a href="#" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
@@ -150,13 +151,13 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     # For more informtion take a look at the README.
 
 [params.features]
-    enable = true
+    enable = false
     # All features are defined in their own files. You can find example items
     # at 'exampleSite/data/features'.
     # For more informtion take a look at the README.
 
 [params.testimonials]
-    enable = true
+    enable = false
     # All testimonials are defined in their own files. You can find example items
     # at 'exampleSite/data/testimonials'.
     # For more informtion take a look at the README.
@@ -166,20 +167,31 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 [params.see_more]
     enable = true
     icon = "fa fa-file-code-o"
-    title = "Do you want to see more?"
-    subtitle = "We have prepared for you more than 40 different HTML pages, including 5 variations of homepage."
-    link_url = "#"
-    link_text = "Check other homepages"
+    title = "Check our university website too?"
+    subtitle = "more information about our next meetings."
+    link_url = "https://www.biologie.hu-berlin.de/en/gruppenseiten-en/sfb1315"
+    link_text = "sfb1315 at the Humboldt university website"
 
 [params.clients]
     enable = true
     # All clients are defined in their own files. You can find example items
     # at 'exampleSite/data/clients'.
     # For more informtion take a look at the README.
-    title = "Our Clients"
+    title = "Our Project and team"
     subtitle = ""
 
 [params.recent_posts]
     enable = true
     title = "From our blog"
     subtitle = "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo."
+
+[params.imagelinks]
+    enable = true
+    #
+    # All clients are defined in their own files. You can find example items
+    # at 'exampleSite/data/clients'.
+    # For more informtion take a look at the README.
+    title1 = "Browse our research outpouts"
+    title2 = " data, software, figures,peer-reviewed and non-peer-reviewed text and outreach work !"
+    subtitle = ""
+    center = false  

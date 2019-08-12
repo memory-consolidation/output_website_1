@@ -19,3 +19,10 @@
 			<link rel="stylesheet" href="{{ . }}">
 		{{ end }}
 		<script src="{{ .Site.BaseURL }}js/modernizr.custom.js"></script>
+
+ <!-- Theme stylesheet, if possible do not edit this stylesheet -->
+  {{ if and (isset .Site.Params "style") .Site.Params.style }}
+    <link href="{{ "css/style" | relURL}}.{{ .Site.Params.style }}.css" rel="stylesheet" id="theme-stylesheet">
+  {{ else }}
+    <link href="{{ "css/style.default.css" | relURL}}" rel="stylesheet" id="theme-stylesheet">
+  {{ end }}
