@@ -22,6 +22,12 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     name = "Home"
     url  = "/"
     weight = 1
+    
+[[menu.main]]
+    identifier="result gallery"
+    name = "Result Gallery"
+    url  = "/R-Gallery/"
+    weight = 1    
 
 [[menu.main]]
     identifier="blog"
